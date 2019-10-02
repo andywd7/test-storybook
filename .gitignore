@@ -1,6 +1,9 @@
 .DS_Store
 node_modules
-/dist
+.eslintcache
+node_modules
+dist/
+/test/unit/coverage/
 
 # local env files
 .env.local
@@ -19,3 +22,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore compiled tokens
+src/assets/tokens/

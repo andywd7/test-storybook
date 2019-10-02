@@ -1,0 +1,17 @@
+// =============================================================================
+// TOOLBOX
+// =============================================================================
+
+// Contains abstracts which do not compile to CSS – variables, mixins,
+// functions etc... This is included for any SCSS and Vue SCSS style blocks.
+//
+// DO NOT INCLUDE ACTUAL STYLES IN THIS FILE.
+
+// Customised Bootstrap variables used for creating our version of Bootstrap and
+// so they are available for all our own styles as well.
+@import "bootstrap-custom/variables";
+
+// Bootstrap tools that we use
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";

@@ -1,0 +1,386 @@
+imports:
+- ./aliases.yml
+global:
+  type: color/hex
+  category: palette
+
+props:
+  - name: black
+    value: "{!black}"
+  - name: white
+    value: "{!white}"
+
+  - name: blue_10
+    value: "{!blue_10}"
+    category: color_group_1
+  - name: blue_20
+    value: "{!blue_20}"
+    category: color_group_1
+  - name: blue_30
+    value: "{!blue_30}"
+    category: color_group_1
+  - name: blue_40
+    value: "{!blue_40}"
+    category: color_group_1
+  - name: blue_50
+    value: "{!blue_50}"
+    category: color_group_1
+  - name: blue_60
+    value: "{!blue_60}"
+    category: color_group_1
+  - name: blue_70
+    value: "{!blue_70}"
+    category: color_group_1
+  - name: blue_80
+    value: "{!blue_80}"
+    category: color_group_1
+  - name: blue_90
+    value: "{!blue_90}"
+    category: color_group_1
+  - name: blue_100
+    value: "{!blue_100}"
+    category: color_group_1
+
+  - name: cyan_10
+    value: "{!cyan_10}"
+    category: color_group_2
+  - name: cyan_20
+    value: "{!cyan_20}"
+    category: color_group_2
+  - name: cyan_30
+    value: "{!cyan_30}"
+    category: color_group_2
+  - name: cyan_40
+    value: "{!cyan_40}"
+    category: color_group_2
+  - name: cyan_50
+    value: "{!cyan_50}"
+    category: color_group_2
+  - name: cyan_60
+    value: "{!cyan_60}"
+    category: color_group_2
+  - name: cyan_70
+    value: "{!cyan_70}"
+    category: color_group_2
+  - name: cyan_80
+    value: "{!cyan_80}"
+    category: color_group_2
+  - name: cyan_90
+    value: "{!cyan_90}"
+    category: color_group_2
+  - name: cyan_100
+    value: "{!cyan_100}"
+    category: color_group_2
+
+  - name: green_10
+    value: "{!green_10}"
+    category: color_group_3
+  - name: green_20
+    value: "{!green_20}"
+    category: color_group_3
+  - name: green_30
+    value: "{!green_30}"
+    category: color_group_3
+  - name: green_40
+    value: "{!green_40}"
+    category: color_group_3
+  - name: green_50
+    value: "{!green_50}"
+    category: color_group_3
+  - name: green_60
+    value: "{!green_60}"
+    category: color_group_3
+  - name: green_70
+    value: "{!green_70}"
+    category: color_group_3
+  - name: green_80
+    value: "{!green_80}"
+    category: color_group_3
+  - name: green_90
+    value: "{!green_90}"
+    category: color_group_3
+  - name: green_100
+    value: "{!green_100}"
+    category: color_group_3
+
+  - name: indigo_10
+    value: "{!indigo_10}"
+    category: color_group_4
+  - name: indigo_20
+    value: "{!indigo_20}"
+    category: color_group_4
+  - name: indigo_30
+    value: "{!indigo_30}"
+    category: color_group_4
+  - name: indigo_40
+    value: "{!indigo_40}"
+    category: color_group_4
+  - name: indigo_50
+    value: "{!indigo_50}"
+    category: color_group_4
+  - name: indigo_60
+    value: "{!indigo_60}"
+    category: color_group_4
+  - name: indigo_70
+    value: "{!indigo_70}"
+    category: color_group_4
+  - name: indigo_80
+    value: "{!indigo_80}"
+    category: color_group_4
+  - name: indigo_90
+    value: "{!indigo_90}"
+    category: color_group_4
+  - name: indigo_100
+    value: "{!indigo_100}"
+    category: color_group_4
+
+  - name: lime_10
+    value: "{!lime_10}"
+    category: color_group_5
+  - name: lime_20
+    value: "{!lime_20}"
+    category: color_group_5
+  - name: lime_30
+    value: "{!lime_30}"
+    category: color_group_5
+  - name: lime_40
+    value: "{!lime_40}"
+    category: color_group_5
+  - name: lime_50
+    value: "{!lime_50}"
+    category: color_group_5
+  - name: lime_60
+    value: "{!lime_60}"
+    category: color_group_5
+  - name: lime_70
+    value: "{!lime_70}"
+    category: color_group_5
+  - name: lime_80
+    value: "{!lime_80}"
+    category: color_group_5
+  - name: lime_90
+    value: "{!lime_90}"
+    category: color_group_5
+  - name: lime_100
+    value: "{!lime_100}"
+    category: color_group_5
+
+  - name: magenta_10
+    value: "{!magenta_10}"
+    category: color_group_6
+  - name: magenta_20
+    value: "{!magenta_20}"
+    category: color_group_6
+  - name: magenta_30
+    value: "{!magenta_30}"
+    category: color_group_6
+  - name: magenta_40
+    value: "{!magenta_40}"
+    category: color_group_6
+  - name: magenta_50
+    value: "{!magenta_50}"
+    category: color_group_6
+  - name: magenta_60
+    value: "{!magenta_60}"
+    category: color_group_6
+  - name: magenta_70
+    value: "{!magenta_70}"
+    category: color_group_6
+  - name: magenta_80
+    value: "{!magenta_80}"
+    category: color_group_6
+  - name: magenta_90
+    value: "{!magenta_90}"
+    category: color_group_6
+  - name: magenta_100
+    value: "{!magenta_100}"
+    category: color_group_6
+
+  - name: orange_10
+    value: "{!orange_10}"
+    category: color_group_7
+  - name: orange_20
+    value: "{!orange_20}"
+    category: color_group_7
+  - name: orange_30
+    value: "{!orange_30}"
+    category: color_group_7
+  - name: orange_40
+    value: "{!orange_40}"
+    category: color_group_7
+  - name: orange_50
+    value: "{!orange_50}"
+    category: color_group_7
+  - name: orange_60
+    value: "{!orange_60}"
+    category: color_group_7
+  - name: orange_70
+    value: "{!orange_70}"
+    category: color_group_7
+  - name: orange_80
+    value: "{!orange_80}"
+    category: color_group_7
+  - name: orange_90
+    value: "{!orange_90}"
+    category: color_group_7
+  - name: orange_100
+    value: "{!orange_100}"
+    category: color_group_7
+
+  - name: purple_10
+    value: "{!purple_10}"
+    category: color_group_8
+  - name: purple_20
+    value: "{!purple_20}"
+    category: color_group_8
+  - name: purple_30
+    value: "{!purple_30}"
+    category: color_group_8
+  - name: purple_40
+    value: "{!purple_40}"
+    category: color_group_8
+  - name: purple_50
+    value: "{!purple_50}"
+    category: color_group_8
+  - name: purple_60
+    value: "{!purple_60}"
+    category: color_group_8
+  - name: purple_70
+    value: "{!purple_70}"
+    category: color_group_8
+  - name: purple_80
+    value: "{!purple_80}"
+    category: color_group_8
+  - name: purple_90
+    value: "{!purple_90}"
+    category: color_group_8
+  - name: purple_100
+    value: "{!purple_100}"
+    category: color_group_8
+
+  - name: red_10
+    value: "{!red_10}"
+    category: color_group_9
+  - name: red_20
+    value: "{!red_20}"
+    category: color_group_9
+  - name: red_30
+    value: "{!red_30}"
+    category: color_group_9
+  - name: red_40
+    value: "{!red_40}"
+    category: color_group_9
+  - name: red_50
+    value: "{!red_50}"
+    category: color_group_9
+  - name: red_60
+    value: "{!red_60}"
+    category: color_group_9
+  - name: red_70
+    value: "{!red_70}"
+    category: color_group_9
+  - name: red_80
+    value: "{!red_80}"
+    category: color_group_9
+  - name: red_90
+    value: "{!red_90}"
+    category: color_group_9
+  - name: red_100
+    value: "{!red_100}"
+    category: color_group_9
+
+  - name: surface_10
+    value: "{!surface_10}"
+    category: color_group_10
+    # comment: Second default background color for the app.
+    # release: 1.0.0
+    # access: global
+  - name: surface_20
+    value: "{!surface_20}"
+    category: color_group_10
+  - name: surface_30
+    value: "{!surface_30}"
+    category: color_group_10
+  - name: surface_40
+    value: "{!surface_40}"
+    category: color_group_10
+  - name: surface_50
+    value: "{!surface_50}"
+    category: color_group_10
+  - name: surface_60
+    value: "{!surface_60}"
+    category: color_group_10
+  - name: surface_70
+    value: "{!surface_70}"
+    category: color_group_10
+  - name: surface_80
+    value: "{!surface_80}"
+    category: color_group_10
+  - name: surface_90
+    value: "{!surface_90}"
+    category: color_group_10
+  - name: surface_100
+    value: "{!surface_100}"
+    category: color_group_10
+
+  - name: teal_10
+    value: "{!teal_10}"
+    category: color_group_11
+  - name: teal_20
+    value: "{!teal_20}"
+    category: color_group_11
+  - name: teal_30
+    value: "{!teal_30}"
+    category: color_group_11
+  - name: teal_40
+    value: "{!teal_40}"
+    category: color_group_11
+  - name: teal_50
+    value: "{!teal_50}"
+    category: color_group_11
+  - name: teal_60
+    value: "{!teal_60}"
+    category: color_group_11
+  - name: teal_70
+    value: "{!teal_70}"
+    category: color_group_11
+  - name: teal_80
+    value: "{!teal_80}"
+    category: color_group_11
+  - name: teal_90
+    value: "{!teal_90}"
+    category: color_group_11
+  - name: teal_100
+    value: "{!teal_100}"
+    category: color_group_11
+
+  - name: yellow_10
+    value: "{!yellow_10}"
+    category: color_group_12
+  - name: yellow_20
+    value: "{!yellow_20}"
+    category: color_group_12
+  - name: yellow_30
+    value: "{!yellow_30}"
+    category: color_group_12
+  - name: yellow_40
+    value: "{!yellow_40}"
+    category: color_group_12
+  - name: yellow_50
+    value: "{!yellow_50}"
+    category: color_group_12
+  - name: yellow_60
+    value: "{!yellow_60}"
+    category: color_group_12
+  - name: yellow_70
+    value: "{!yellow_70}"
+    category: color_group_12
+  - name: yellow_80
+    value: "{!yellow_80}"
+    category: color_group_12
+  - name: yellow_90
+    value: "{!yellow_90}"
+    category: color_group_12
+  - name: yellow_100
+    value: "{!yellow_100}"
+    category: color_group_12

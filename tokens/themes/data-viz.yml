@@ -1,0 +1,21 @@
+#
+# DARK THEME
+#
+
+imports:
+- ../palette/aliases.yml
+global:
+  type: color/hex
+  category: theme
+
+props:
+  - name: data_viz_01_01
+    value: "{!blue_50}"
+    category: data_viz_01
+  - name: data_viz_01_02
+    value: "{!purple_50}"
+    category: data_viz_01
+  - name: data_viz_01_03
+    value: "{!teal_50}"
+    category: data_viz_01
+

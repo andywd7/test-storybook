@@ -1,0 +1,155 @@
+// .btn {
+//   &.disabled,
+//   &:disabled {
+//     &,
+//     &:hover,
+//     &:active {
+//       background-color: $gray-400;
+//       border-color: $gray-400;
+//       color: $gray-600;
+//       cursor: not-allowed;
+//       opacity: 1;
+//     }
+//   }
+// }
+
+// .nt-btn--minimal {
+//   background-color: transparent;
+//   border-color: transparent;
+
+//   @each $color, $value in $theme-colors {
+//     &.btn-#{$color} {
+//       color: #{$value};
+
+//       @include hover {
+//         color: color-yiq(darken($value, 7.5%));
+//       }
+//     }
+//   }
+// }
+
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+
+.nt-btn,
+.btn {
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include transition($btn-transition);
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  color: $body-color;
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  // min-height: 2rem;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+
+  @include hover {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: $btn-focus-box-shadow;
+    outline: 0;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    @include box-shadow(none);
+    opacity: $btn-disabled-opacity;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.nt-btn.disabled,
+a.btn.disabled,
+fieldset:disabled a.nt-btn,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .nt-btn--#{$color},
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+// @each $color, $value in $theme-colors {
+//   .btn-outline-#{$color} {
+//     @include button-outline-variant($value);
+//   }
+// }
+
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.nt-btn--minimal {
+  background-color: transparent;
+  border-color: transparent;
+
+  // @include hover {
+  //   color: $link-hover-color;
+  //   text-decoration: $link-hover-decoration;
+  // }
+
+  &:focus,
+  &.focus {
+    // box-shadow: none;
+    // text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    // color: $btn-link-disabled-color;
+    // pointer-events: none;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    // @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      // @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+}
+
+
+//
+// Button Sizes
+//
+
+// .btn-lg {
+//   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
+// }
+
+.nt-btn--sm,
+.btn-sm {
+  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
+}

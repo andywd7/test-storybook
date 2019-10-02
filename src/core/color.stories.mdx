@@ -1,0 +1,79 @@
+import {
+  Story,
+  Preview,
+  Props,
+  Source,
+  Description,
+  ColorPalette,
+  ColorItem,
+  Meta,
+} from '@storybook/addon-docs/blocks'
+import tokens from '../../src/assets/tokens/tokens.json'
+import tokensProps from '../../src/assets/tokens/tokens.raw.json'
+
+<Meta title="Core|Color" />
+
+## A random color ColorPalette
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="Primaries"
+    colors={[
+      tokens.color_primary_30,
+      tokens.color_primary_40,
+      tokens.color_primary_50,
+      tokens.color_primary_60,
+      tokens.color_primary_70
+    ]}
+  />
+  <ColorItem
+    title="Surface"
+    subtitle="Some of the greys"
+    colors={[
+      tokens.color_surface_10,
+      tokens.color_surface_20,
+      tokens.color_surface_30,
+      tokens.color_surface_40,
+      tokens.color_surface_50,
+      tokens.color_surface_60,
+      tokens.color_surface_70,
+      tokens.color_surface_80,
+      tokens.color_surface_90,
+      tokens.color_surface_100
+    ]}
+  />
+  <ColorItem
+    title="Danger"
+    subtitle="Dangers"
+    colors={[
+      tokens.color_danger_30,
+      tokens.color_danger_40,
+      tokens.color_danger_50,
+      tokens.color_danger_60,
+      tokens.color_danger_70
+    ]}
+  />
+  <ColorItem
+    title="Success"
+    subtitle="Successes"
+    colors={[
+      tokens.color_success_30,
+      tokens.color_success_40,
+      tokens.color_success_50,
+      tokens.color_success_60,
+      tokens.color_success_70
+    ]}
+  />
+  <ColorItem
+    title="Warning"
+    subtitle="Warnings"
+    colors={[
+      tokens.color_warning_30,
+      tokens.color_warning_40,
+      tokens.color_warning_50,
+      tokens.color_warning_60,
+      tokens.color_warning_70
+    ]}
+  />
+</ColorPalette>

@@ -1,0 +1,15 @@
+#
+# LINE HEIGHT
+# Use these tokens to set line-height.
+#
+
+props:
+  line_height_md:
+    value: "1.5"
+  line_height_sm:
+    value: "1.2"
+  line_height_xs:
+    value: "1"
+global:
+  type: number
+  category: line-height
