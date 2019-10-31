@@ -1,0 +1,13 @@
+#
+# DARK THEME
+#
+
+imports:
+- ../../palette/aliases.yml
+- ./core.yml
+# - ./interactive.yml
+# - ./data-viz.yml
+# global:
+#   type: color/hex
+#   category: theme
+

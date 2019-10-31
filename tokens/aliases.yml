@@ -1,5 +1,5 @@
 imports:
-- ./palette/aliases.yml
+- './palette/aliases.yml'
 aliases:
   fontSize_base: "1rem"
   fontSize_mouse: "0.6875rem"

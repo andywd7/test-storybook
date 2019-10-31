@@ -1,0 +1,16 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+import Color from './Color'
+
+<Meta title="Core|Colors" component={Color} />
+
+# Colors
+
+Let's define a story for our `Colors` component:
+
+<Story name="all">
+  {{
+    components: { Color },
+    template: '<color />'
+  }}
+</Story>

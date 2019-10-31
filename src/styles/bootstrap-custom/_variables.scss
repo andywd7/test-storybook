@@ -7,35 +7,35 @@
 
 // // Color system
 
-$white:     $white;
-$gray-100:  $surface-10;
-$gray-200:  $surface-20;
-$gray-300:  $surface-30;
-$gray-400:  $surface-40;
-$gray-500:  $surface-50;
-$gray-600:  $surface-60;
-$gray-700:  $surface-70;
-$gray-800:  $surface-80;
-$gray-900:  $surface-90;
-$gray-1000: $surface-100;
-$black:     $black;
+$white:     $nt-white;
+// $gray-100:  $nt-grey-10;
+// $gray-200:  $nt-grey-20;
+// $gray-300:  $nt-grey-30;
+// $gray-400:  $nt-grey-40;
+// $gray-500:  $nt-grey-50;
+// $gray-600:  $nt-grey-60;
+// $gray-700:  $nt-grey-70;
+// $gray-800:  $nt-grey-80;
+// $gray-900:  $nt-grey-90;
+// $gray-1000: $nt-grey-100;
+$black:     $nt-black;
 
-$grays: ();
+// $grays: ();
 // // stylelint-disable-next-line scss/dollar-variable-default
-$grays: map-merge(
-  (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
+// $grays: map-merge(
+//   (
+//     "100": $gray-100,
+//     "200": $gray-200,
+//     "300": $gray-300,
+//     "400": $gray-400,
+//     "500": $gray-500,
+//     "600": $gray-600,
+//     "700": $gray-700,
+//     "800": $gray-800,
+//     "900": $gray-900
+//   ),
+//   $grays
+// );
 
 // $blue:    $blue-50 !default;
 // $indigo:  #6610f2 !default;
@@ -69,12 +69,12 @@ $grays: map-merge(
 //   $colors
 // );
 
-$primary:       $interactive-01;
-$secondary:     $interactive-02;
+$primary:       $nt-interactive-01;
+$secondary:     $nt-interactive-02;
 // $success:       $green !default;
 // $info:          $cyan !default;
 // $warning:       $yellow !default;
-$danger:        $support-01;
+$danger:        $nt-support-01;
 // $light:         $gray-100 !default;
 // $dark:          $gray-800 !default;
 
@@ -164,8 +164,8 @@ $enable-shadows:                              true;
 // //
 // // Settings for the `<body>` element.
 
-$body-bg:                   $ui-background;
-$body-color:                $text-01;
+$body-bg:                   $nt-ui-background;
+$body-color:                $nt-text-01;
 
 
 // // Links
@@ -343,25 +343,25 @@ $font-weight-bold:            600;
 // $hr-margin-y:                 $spacer !default;
 
 
-// // Tables
-// //
-// // Customizes the `.table` component with basic values, each used across all table variations.
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
 
 // $table-cell-padding:          .75rem !default;
 // $table-cell-padding-sm:       .3rem !default;
 
-// $table-color:                 $body-color !default;
-// $table-bg:                    null !default;
+$table-color:                 $nt-text-02;
+$table-bg:                    $nt-ui-01;
 // $table-accent-bg:             rgba($black, .05) !default;
-// $table-hover-color:           $table-color !default;
-// $table-hover-bg:              rgba($black, .075) !default;
+$table-hover-color:           $nt-text-01;
+$table-hover-bg:              $nt-hover-row;
 // $table-active-bg:             $table-hover-bg !default;
 
 // $table-border-width:          $border-width !default;
-// $table-border-color:          $border-color !default;
+$table-border-color:          $nt-ui-03;
 
-// $table-head-bg:               $gray-200 !default;
-// $table-head-color:            $gray-700 !default;
+$table-head-bg:               $nt-ui-03;
+$table-head-color:            $nt-text-02;
 
 // $table-dark-color:            $white !default;
 // $table-dark-bg:               $gray-800 !default;
@@ -467,11 +467,11 @@ $btn-font-weight:             $font-weight-bold;
 // $input-font-size-lg:                    $input-btn-font-size-lg !default;
 // $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
-$input-bg:                              $field-01;
+$input-bg:                              $nt-field-01;
 // $input-disabled-bg:                     $gray-200 !default;
 
-$input-color:                           $text-01;
-$input-border-color:                    $field-01;
+$input-color:                           $nt-text-01;
+$input-border-color:                    $nt-field-01;
 // $input-border-width:                    $input-btn-border-width !default;
 // $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 
@@ -480,7 +480,7 @@ $input-border-color:                    $field-01;
 // $input-border-radius-sm:                $border-radius-sm !default;
 
 // $input-focus-bg:                        $input-bg !default;
-$input-focus-border-color:              $focus;
+$input-focus-border-color:              $nt-focus;
 // $input-focus-color:                     $input-color !default;
 // $input-focus-width:                     $input-btn-focus-width !default;
 // $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
@@ -1101,10 +1101,10 @@ $input-focus-border-color:              $focus;
 // $close-text-shadow:                 0 1px 0 $white !default;
 
 
-// // Code
+// Code
 
 // $code-font-size:                    87.5% !default;
-// $code-color:                        $pink !default;
+$code-color:                        $nt-grey-10;
 
 // $kbd-padding-y:                     .2rem !default;
 // $kbd-padding-x:                     .4rem !default;

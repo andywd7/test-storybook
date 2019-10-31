@@ -1,39 +1,39 @@
 import { create } from '@storybook/theming';
-import tokens from '../src/assets/tokens/tokens.json'
+import tokens from '../src/assets/tokens/tokensAndPalette.json'
 
 export default create({
   base: 'light',
 
-  colorPrimary: 'red',
-  colorSecondary: tokens.color_primary_50,
+  colorPrimary: tokens.red_50,
+  colorSecondary: tokens.blue_50,
 
   // UI
-  appBg: tokens.color_surface_10,
-  appContentBg: '#fff',
-  appBorderColor: tokens.color_surface_20,
+  appBg: tokens.white,
+  appContentBg: tokens.grey_10,
+  appBorderColor: tokens.grey_20,
   appBorderRadius: 3,
 
   // Typography
-  fontBase: tokens.font_text,
+  fontBase: tokens.fontFamily,
   // fontCode: 'monospace',
 
   // Text colors
-  textColor: tokens.color_surface_90,
-  textInverseColor: tokens.color_surface_10,
+  textColor: tokens.grey_100,
+  textInverseColor: tokens.whiite,
 
   // Toolbar default and active colors
-  barTextColor: tokens.color_surface_90,
-  barSelectedColor: tokens.color_primary_50,
-  barBg: tokens.color_surface_10,
+  barTextColor: tokens.grey_100,
+  barSelectedColor: tokens.blue_50,
+  barBg: tokens.white,
 
   // Form colors
-  inputBg: tokens.color_surface_10,
-  inputBorder: tokens.color_surface_10,
-  inputTextColor: tokens.color_surface_90,
+  inputBg: tokens.white,
+  inputBorder: tokens.grey_20,
+  inputTextColor: tokens.grey_100,
   inputBorderRadius: 3,
 
-  brandTitle: 'Netace Storybook',
-  gridCellSize: 2
+  brandTitle: 'Netace Storybook'
+  // gridCellSize: 2
   // brandUrl: 'https://example.com',
   // brandImage: 'https://placehold.it/350x150'
 })

@@ -1,0 +1,41 @@
+{
+  "imports": [
+    "../aliases.json"
+  ],
+  "global": {
+    "type": "fontSize",
+    "category": "typography"
+  },
+  "props": [
+    { 
+      "name": "fontSize_01", 
+      "value": "{!fontSize_01}"
+    }, {
+      "name": "fontSize_02",
+      "value": "{!fontSize_02}"
+    },
+    {
+      "name": "fontSize_03",
+      "value": "{!fontSize_03}"
+    },
+    {
+      "name": "fontSize_04",
+      "value": "{!fontSize_04}"
+    },
+    { 
+      "name": "fontSize_05", 
+      "value": "{!fontSize_05}"
+    }, {
+      "name": "fontSize_06",
+      "value": "{!fontSize_06}"
+    },
+    {
+      "name": "fontSize_07",
+      "value": "{!fontSize_07}"
+    },
+    {
+      "name": "fontSize_08",
+      "value": "{!fontSize_08}"
+    }
+  ]
+}

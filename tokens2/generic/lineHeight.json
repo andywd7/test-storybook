@@ -1,0 +1,47 @@
+{
+  "global": {
+    "type": "lineHeight",
+    "category": "typography"
+  },
+  "props": [
+    {
+      "name": "lineHeight_01",
+      "value": "16px"
+    },
+    {
+      "name": "lineHeight_02",
+      "value": "18px"
+    },
+    {
+      "name": "lineHeight_03",
+      "value": "20px"
+    },
+    {
+      "name": "lineHeight_04",
+      "value": "22px"
+    },
+    {
+      "name": "lineHeight_05",
+      "value": "24px"
+    },
+    {
+      "name": "lineHeight_06",
+      "value": "26px"
+    },
+    {
+      "name": "lineHeight_07",
+      "value": "36px"
+    },
+    {
+      "name": "lineHeight_08",
+      "value": "40px"
+    },
+    {
+      "name": "lineHeight_09",
+      "value": "50px"
+    },
+    {
+      "name": "lineHeight_10",
+      "value": "64px"
+    }]
+}

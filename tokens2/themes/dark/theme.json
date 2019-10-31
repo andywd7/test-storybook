@@ -1,0 +1,11 @@
+{
+    "imports": [
+        "./core.json",
+        "./interactive.json",
+        "./data-viz.json"
+    ],
+    "global": {
+        "type": "color/hex",
+        "category": "theme"
+    }
+}

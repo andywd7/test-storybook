@@ -1,7 +1,3 @@
-#
-# GLOBAL: DESIGN TOKENS
-#
-
 imports:
-- ./palette/index.yml
-- ./tokens.yml
+  - './palette/index.yml'
+  - './tokens.yml'

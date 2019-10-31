@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "../aliases.json"
+  ],
+  "global": {
+    "type": "fontWeight",
+    "category": "typography"
+  },
+  "props": [
+    {
+      "name": "fontWeight_regular",
+      "value": "{!fontWeight_regular}"
+    },
+    {
+      "name": "fontWeight_medium", 
+      "value": "{!fontWeight_medium}"
+    }
+  ]
+}

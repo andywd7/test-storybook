@@ -1,0 +1,14 @@
+{
+  "aliases": {
+    "grey_hover_10": "#e0e4ea",
+    "grey_hover_20": "#c4c9d1",
+    "grey_hover_30": "#aaafb7",
+    "grey_hover_40": "#90979f",
+    "grey_hover_50": "#747c83",
+    "grey_hover_60": "#5a6066",
+    "grey_hover_70": "#5f656b",
+    "grey_hover_80": "#464c51",
+    "grey_hover_90": "#2f353a",
+    "grey_hover_100": "#272c30"
+  }
+}

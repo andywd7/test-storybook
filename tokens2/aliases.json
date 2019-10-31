@@ -1,0 +1,18 @@
+{
+  "imports": [
+    "./palette/aliases.json"
+  ],
+  "aliases": {
+    "fontSize_01": "12px",
+    "fontSize_02": "14px",
+    "fontSize_03": "16px",
+    "fontSize_04": "20px",
+    "fontSize_05": "28px",
+    "fontSize_06": "32px",
+    "fontSize_07": "42px",
+    "fontSize_08": "54px",
+
+    "fontWeight_regular": 400,
+    "fontWeight_medium": 600
+  }
+}

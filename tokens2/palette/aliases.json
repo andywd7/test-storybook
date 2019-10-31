@@ -1,0 +1,19 @@
+{
+  "imports": [
+    "./blue.json",
+    "./orange.json",
+    "./yellow.json",
+    "./green.json",
+    "./grey.json",
+    "./grey_hover.json",
+    "./magenta.json",
+    "./purple.json",
+    "./red.json",
+    "./cyan.json",
+    "./teal.json"
+  ],
+  "aliases": {
+    "black": "#000",
+    "white": "#fff"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "imports": [
+    "../aliases.json"
+  ],
+  "global": {
+    "type": "color/hex",
+    "category": "background"
+  },
+  "props": [
+    { "name": "backgroundColor",                       "value": "{!white}" },
+    { "name": "backgroundColor_active",                "value": "{!grey_20}" },
+    { "name": "backgroundColor_disabled",              "value": "{!grey_20}" },
+    { "name": "backgroundColor_focus",                 "value": "{!white}" },
+    { "name": "backgroundColor_hover",                 "value": "{!grey_10}" },
+    { "name": "backgroundColor_brand_selected",        "value": "{!blue_10}" },
+    { "name": "backgroundColor_brand_selectedActive",  "value": "{!blue_30}" },
+    { "name": "backgroundColor_brand_selectedHover",   "value": "{!blue_20}" },
+    { "name": "backgroundColor_brandPrimary",          "value": "{!blue_60}" },
+    { "name": "backgroundColor_brandPrimary_active",   "value": "{!blue_70}" },
+    { "name": "backgroundColor_brandPrimary_focus",    "value": "{!blue_60}" },
+    { "name": "backgroundColor_brandPrimary_hover",    "value": "{!blue_50}" },
+    { "name": "backgroundColor_danger_active",         "value": "{!red_20}" },
+    { "name": "backgroundColor_danger_focus",          "value": "{!red_10}" },
+    { "name": "backgroundColor_danger_hover",          "value": "{!red_10}" },
+    { "name": "backgroundColor_dangerPrimary",         "value": "{!red_60}" },
+    { "name": "backgroundColor_dangerPrimary_active",  "value": "{!red_70}" },
+    { "name": "backgroundColor_dangerPrimary_focus",   "value": "{!red_60}" },
+    { "name": "backgroundColor_dangerPrimary_hover",   "value": "{!red_50}" },
+    { "name": "backgroundColor_success_active",        "value": "{!green_20}" },
+    { "name": "backgroundColor_success_focus",         "value": "{!green_10}" },
+    { "name": "backgroundColor_success_hover",         "value": "{!green_10}" },
+    { "name": "backgroundColor_successPrimary",        "value": "{!green_60}" },
+    { "name": "backgroundColor_successPrimary_active", "value": "{!green_70}" },
+    { "name": "backgroundColor_successPrimary_focus",  "value": "{!green_60}" },
+    { "name": "backgroundColor_successPrimary_hover",  "value": "{!green_50}" },
+    { "name": "backgroundColor_warning_active",        "value": "{!orange_20}" },
+    { "name": "backgroundColor_warning_focus",         "value": "{!orange_10}" },
+    { "name": "backgroundColor_warning_hover",         "value": "{!orange_10}" },
+    { "name": "backgroundColor_warningPrimary",        "value": "{!orange_60}" },
+    { "name": "backgroundColor_warningPrimary_active", "value": "{!orange_70}" },
+    { "name": "backgroundColor_warningPrimary_focus",  "value": "{!orange_60}" },
+    { "name": "backgroundColor_warningPrimary_hover",  "value": "{!orange_50}" }
+  ]
+}

@@ -7,9 +7,11 @@ import { withKnobs } from '@storybook/addon-knobs'
 
 
 import netaceTheme from './netaceTheme'
+// import BootstrapVue from 'bootstrap-vue'
 import { FormInputPlugin } from 'bootstrap-vue'
 import { FormSelectPlugin } from 'bootstrap-vue'
 import { FormTextareaPlugin } from 'bootstrap-vue'
+import { LayoutPlugin } from 'bootstrap-vue'
 
 
 addDecorator(centered)
@@ -20,9 +22,11 @@ addDecorator(withKnobs)
 import '../src/styles/styles.scss'
 
 // Install Vue plugins.
+// Vue.use(BootstrapVue)
 Vue.use(FormInputPlugin)
 Vue.use(FormSelectPlugin)
 Vue.use(FormTextareaPlugin)
+Vue.use(LayoutPlugin)
 
 addParameters({
   a11y: {
@@ -51,7 +55,7 @@ addParameters({
   ],
   options: {
     hierarchyRootSeparator: /\|/, // matches a |
-    panelPosition: 'bottom',
+    // panelPosition: 'bottom',
     theme: netaceTheme
   },
 });

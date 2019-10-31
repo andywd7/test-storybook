@@ -1,0 +1,125 @@
+{
+  "imports": [
+    "../../palette/aliases.json"
+  ],
+  "global": {
+    "type": "color/hex",
+    "category": "theme"
+  },
+  "props": [{
+    "name": "focus",
+    "value": "{!white}",
+    "category": "interactive",
+    "role": "Focus border; Focus underline"
+  }, {
+    "name": "hover_primary",
+    "value": "{!blue_70}",
+    "category": "interactive",
+    "role": "Interactive-01 hover"
+  }, {
+    "name": "hover_primary_text",
+    "value": "{!blue_30}",
+    "category": "interactive",
+    "role": "Interactive text hover"
+  }, {
+    "name": "hover_secondary",
+    "value": "{!grey_hover_60}",
+    "category": "interactive",
+    "role": "Secondary hover; Inverse-01 hover"
+  }, {
+    "name": "hover_tertiary",
+    "value": "{!grey_10}",
+    "category": "interactive",
+    "role": "Interactive-03 hover"
+  }, {
+    "name": "hover_ui",
+    "value": "{!grey_hover_80}",
+    "category": "interactive",
+    "role": "ui-01 hover; Ui-02 hover; Transparent background hover"
+  }, {
+    "name": "hover_row",
+    "value": "{!grey_80}",
+    "category": "interactive",
+    "role": "Row hover"
+  }, {
+    "name": "hover_danger",
+    "value": "{!red_70}",
+    "category": "interactive",
+    "role": "Danger hover; Support-01 hover"
+  }, {
+    "name": "active_primary",
+    "value": "{!blue_80}",
+    "category": "interactive",
+    "role": "Interactive-01 active"
+  }, {
+    "name": "active_secondary",
+    "value": "{!grey_80}",
+    "category": "interactive",
+    "role": "interactive-02 active"
+  }, {
+    "name": "active_tertiary",
+    "value": "{!grey_30}",
+    "category": "interactive",
+    "role": "Interactive-03 active"
+  }, {
+    "name": "active_ui",
+    "value": "{!grey_60}",
+    "category": "interactive",
+    "role": "Ui-01 active; Ui-02 active"
+  }, {
+    "name": "active_danger",
+    "value": "{!red_80}",
+    "category": "interactive",
+    "role": "Danger active; Support-01 active"
+  }, {
+    "name": "selected_ui",
+    "value": "{!grey_70}",
+    "category": "interactive",
+    "role": "Selected ui elements"
+  }, {
+    "name": "highlight",
+    "value": "{!blue_80}",
+    "category": "interactive",
+    "role": "Interactive-01 highlight"
+  }, {
+    "name": "visited_link",
+    "value": "{!purple_40}",
+    "category": "interactive",
+    "role": "Visited links"
+  }, {
+    "name": "disabled_01",
+    "value": "{!grey_80}",
+    "category": "interactive",
+    "role": "Disabled fields; Disabled backgrounds; Disabled border"
+  }, {
+    "name": "disabled_02",
+    "value": "{!grey_70}",
+    "category": "interactive",
+    "role": "Disabled elements on disabled-01; Disabled label; Disabled text on disabled-01; Disabled icons; Disabled border"
+  }, {
+    "name": "disabled_03",
+    "value": "{!grey_50}",
+    "category": "interactive",
+    "role": "Disabled text on disabled-02; Disabled icons on disbaled-02"
+  }, {
+    "name": "skeleton-01",
+    "value": "{!grey_hover_80}",
+    "category": "interactive",
+    "role": "Skeleton state for graphics"
+  }, {
+    "name": "skeleton-02",
+    "value": "{!grey_70}",
+    "category": "interactive",
+    "role": "Skeleton state for graphics"
+  }, {
+    "name": "hover_selected_ui",
+    "value": "{!grey_hover_70}",
+    "category": "interactive",
+    "role": "Selected row hover"
+  }, {
+    "name": "inverse_hover_ui",
+    "value": "{!grey_hover_10}",
+    "category": "interactive",
+    "role": "Inverse-01 hover"
+  }]
+}

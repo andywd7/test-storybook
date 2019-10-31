@@ -3,7 +3,7 @@
 #
 
 imports:
-- ../palette/aliases.yml
+- ../../palette/aliases.yml
 global:
   type: color/hex
   category: theme
@@ -84,35 +84,4 @@ props:
   - name: overlay_03
     value: "rgba(0, 0, 0, .25)"
     category: theme_core
-  
-  - name: focus
-    value: "{!blue_40}"
-    category: theme_interactive
-  - name: interactive_01_text_hover
-    value: "{!blue_70}"
-    category: theme_interactive
-  - name: hover_ui
-    value: "#2a2e34"
-    category: theme_interactive
-  - name: hover_row
-    value: "#2a2e34"
-    category: theme_interactive
-  - name: active_ui
-    value: "{!surface_70}"
-    category: theme_interactive
-  - name: selected_ui
-    value: "{!surface_80}"
-    category: theme_interactive
-  - name: highlight
-    value: "{!blue_80}"
-    category: theme_interactive
-  - name: disabled_01
-    value: "{!surface_90}"
-    category: theme_interactive
-  - name: disabled_02
-    value: "{!surface_80}"
-    category: theme_interactive
-  - name: disabled_03
-    value: "{!surface_60}"
-    category: theme_interactive
 

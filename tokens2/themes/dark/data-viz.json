@@ -1,0 +1,67 @@
+{
+  "imports": [
+    "../../palette/aliases.json"
+  ],
+  "global": {
+    "type": "color/hex",
+    "category": "theme"
+  },
+  "props": [{
+    "name": "data_viz_01_01",
+    "value": "{!purple_60}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_02",
+    "value": "{!cyan_40}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_03",
+    "value": "{!teal_60}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_04",
+    "value": "{!magenta_40}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_05",
+    "value": "{!red_50}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_06",
+    "value": "{!red_10}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_07",
+    "value": "{!green_30}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_08",
+    "value": "{!blue_50}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_09",
+    "value": "{!magenta_60}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_10",
+    "value": "{!yellow_40}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_11",
+    "value": "{!teal_40}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_12",
+    "value": "{!cyan_20}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_13",
+    "value": "{!orange_60}",
+    "category": "data_viz_01"
+  }, {
+    "name": "data_viz_01_14",
+    "value": "{!purple_30}",
+    "category": "data_viz_01"
+  }]
+}
+

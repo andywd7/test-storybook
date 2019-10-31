@@ -3,7 +3,7 @@
 #
 
 imports:
-- ../palette/aliases.yml
+- ../../palette/aliases.yml
 global:
   type: color/hex
   category: theme
