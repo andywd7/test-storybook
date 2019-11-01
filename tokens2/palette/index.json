@@ -4,7 +4,7 @@
   ],
   "global": {
     "type": "color/hex",
-    "category": "palette"
+    "category": "color_group_default"
   },
   "props": [{
       "name": "black",
@@ -17,551 +17,551 @@
     { 
       "name": "blue_10",
       "value": "{!blue_10}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_20", 
       "value": "{!blue_20}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_30", 
       "value": "{!blue_30}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_40", 
       "value": "{!blue_40}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_50", 
       "value": "{!blue_50}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_60", 
       "value": "{!blue_60}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_70", 
       "value": "{!blue_70}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_80", 
       "value": "{!blue_80}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_90", 
       "value": "{!blue_90}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "blue_100",
       "value": "{!blue_100}",
-      "category": "color_group_01"
+      "category": "color_group_blue"
     },
     { 
       "name": "green_10",
       "value": "{!green_10}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_20",
       "value": "{!green_20}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_30",
       "value": "{!green_30}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_40",
       "value": "{!green_40}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_50",
       "value": "{!green_50}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_60",
       "value": "{!green_60}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_70",
       "value": "{!green_70}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_80",
       "value": "{!green_80}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "green_90",
       "value": "{!green_90}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
      {
       "name": "green_100",
       "value": "{!green_100}",
-      "category": "color_group_02"
+      "category": "color_group_green"
     },
     { 
       "name": "red_10",
       "value": "{!red_10}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_20", 
       "value": "{!red_20}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_30", 
       "value": "{!red_30}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_40", 
       "value": "{!red_40}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_50", 
       "value": "{!red_50}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_60", 
       "value": "{!red_60}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_70", 
       "value": "{!red_70}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_80", 
       "value": "{!red_80}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "red_90", 
       "value": "{!red_90}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
      { 
       "name": "red_100",
       "value": "{!red_100}",
-      "category": "color_group_03"
+      "category": "color_group_red"
     },
     { 
       "name": "yellow_10",
       "value": "{!yellow_10}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_20", 
       "value": "{!yellow_20}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_30", 
       "value": "{!yellow_30}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_40", 
       "value": "{!yellow_40}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_50", 
       "value": "{!yellow_50}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_60", 
       "value": "{!yellow_60}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_70", 
       "value": "{!yellow_70}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_80", 
       "value": "{!yellow_80}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "yellow_90", 
       "value": "{!yellow_90}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
      { 
       "name": "yellow_100",
       "value": "{!yellow_100}",
-      "category": "color_group_04"
+      "category": "color_group_yellow"
     },
     { 
       "name": "orange_10",
       "value": "{!orange_10}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_20", 
       "value": "{!orange_20}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_30", 
       "value": "{!orange_30}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_40", 
       "value": "{!orange_40}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_50", 
       "value": "{!orange_50}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_60", 
       "value": "{!orange_60}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_70", 
       "value": "{!orange_70}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_80", 
       "value": "{!orange_80}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "orange_90", 
       "value": "{!orange_90}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
      { 
       "name": "orange_100",
       "value": "{!orange_100}",
-      "category": "color_group_05"
+      "category": "color_group_orange"
     },
     { 
       "name": "magenta_10",
       "value": "{!magenta_10}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_20", 
       "value": "{!magenta_20}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_30", 
       "value": "{!magenta_30}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_40", 
       "value": "{!magenta_40}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_50", 
       "value": "{!magenta_50}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_60", 
       "value": "{!magenta_60}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_70", 
       "value": "{!magenta_70}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_80", 
       "value": "{!magenta_80}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "magenta_90", 
       "value": "{!magenta_90}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
      { 
       "name": "magenta_100",
       "value": "{!magenta_100}",
-      "category": "color_group_06"
+      "category": "color_group_magenta"
     },
     { 
       "name": "purple_10",
       "value": "{!purple_10}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_20", 
       "value": "{!purple_20}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_30", 
       "value": "{!purple_30}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_40", 
       "value": "{!purple_40}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_50", 
       "value": "{!purple_50}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_60", 
       "value": "{!purple_60}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_70", 
       "value": "{!purple_70}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_80", 
       "value": "{!purple_80}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "purple_90", 
       "value": "{!purple_90}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
      { 
       "name": "purple_100",
       "value": "{!purple_100}",
-      "category": "color_group_07"
+      "category": "color_group_purple"
     },
     { 
       "name": "teal_10",
       "value": "{!teal_10}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_20", 
       "value": "{!teal_20}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_30", 
       "value": "{!teal_30}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_40", 
       "value": "{!teal_40}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_50", 
       "value": "{!teal_50}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_60", 
       "value": "{!teal_60}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_70", 
       "value": "{!teal_70}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_80", 
       "value": "{!teal_80}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "teal_90", 
       "value": "{!teal_90}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
      { 
       "name": "teal_100",
       "value": "{!teal_100}",
-      "category": "color_group_08"
+      "category": "color_group_teal"
     },
     { 
       "name": "cyan_10",
       "value": "{!cyan_10}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_20", 
       "value": "{!cyan_20}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_30", 
       "value": "{!cyan_30}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_40", 
       "value": "{!cyan_40}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_50", 
       "value": "{!cyan_50}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_60", 
       "value": "{!cyan_60}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_70", 
       "value": "{!cyan_70}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_80", 
       "value": "{!cyan_80}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "cyan_90", 
       "value": "{!cyan_90}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
      { 
       "name": "cyan_100",
       "value": "{!cyan_100}",
-      "category": "color_group_09"
+      "category": "color_group_cyan"
     },
     { 
       "name": "grey_10",
       "value": "{!grey_10}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_20",
       "value": "{!grey_20}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_30",
       "value": "{!grey_30}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_40",
       "value": "{!grey_40}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_50",
       "value": "{!grey_50}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_60",
       "value": "{!grey_60}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_70",
       "value": "{!grey_70}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_80",
       "value": "{!grey_80}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_90",
       "value": "{!grey_90}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
      {
       "name": "grey_100",
       "value": "{!grey_100}",
-      "category": "color_group_10"
+      "category": "color_group_grey"
     },
     { 
       "name": "grey_hover_10",
       "value": "{!grey_hover_10}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_20", 
       "value": "{!grey_hover_20}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_30", 
       "value": "{!grey_hover_30}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_40", 
       "value": "{!grey_hover_40}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_50", 
       "value": "{!grey_hover_50}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_60", 
       "value": "{!grey_hover_60}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_70", 
       "value": "{!grey_hover_70}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_80", 
       "value": "{!grey_hover_80}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
     { 
       "name": "grey_hover_90", 
       "value": "{!grey_hover_90}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     },
      { 
       "name": "grey_hover_100",
       "value": "{!grey_hover_100}",
-      "category": "color_group_11"
+      "category": "color_group_grey_hover"
     }]
 }

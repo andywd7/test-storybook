@@ -1,6 +1,6 @@
 export default {
-  title: 'Bootstrap|Textarea',
-};
+  title: 'Bootstrap|Textarea'
+}
 
 export const defaultTextarea = () => ({
   template: `

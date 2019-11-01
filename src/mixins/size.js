@@ -23,5 +23,14 @@ export default {
       default: '',
       validator: value => (['', 'xs', 'sm', 'md', 'lg'].indexOf(value) !== -1)
     }
+  },
+  methods: {
+    tokenAlias (input) {
+      const aliasValue = /{!(.*)}/g
+      const string = input
+        .replace(aliasValue, '$1')
+        .replace(/_/g, '-')
+      return string
+    }
   }
 }

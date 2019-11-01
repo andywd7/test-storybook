@@ -1,55 +1,37 @@
 <template>
   <div>
-    <div class="color">
-      <table v-for="(group, index) in colors" :key="index" class="table mb-5">
+    <div>
+      <table class="table">
         <thead>
           <tr>
             <th>-</th>
-            <th v-for="(color, k) in group" :key="k">
-              {{ k }}
-              {{ color }}
+            <th v-for="(clr, k) in txtColor()" :key="k">
+              {{ tokenAlias(k) }}<br>
+              {{ clr }}
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(color, k) in group" :key="k">
+          <tr v-for="(clr, k) in bgColor()" :key="k">
             <td>
-              {{ k }}
-              {{ color }}
+              {{ tokenAlias(k) }}<br>
+              {{ clr }}
             </td>
-            <td v-for="(col, key) in group" :key="key">
-              <div v-if="score(col, color) !== 'F'"
-                   :class="key"
-                   :style="{ backgroundColor: col, color: color }"
-                   class="swatch"
+            <td v-for="(col, key) in txtColor()" :key="key">
+              <div v-if="score(clr, col) !== 'F'"
+                   :class="tokenAlias(key)"
+                   :style="{ backgroundColor: clr, color: col }"
+                   class="nds-swatch"
               >
-                <div class="swatch__row">
-                  <span><b>{{ k }}</b> on <b>{{ key }}</b></span>
+                <div class="nds-swatch__row">
+                  <code :style="{ color: col }">
+                    {{ tokenAlias(k) }} text on<br>
+                    {{ tokenAlias(key) }} background
+                  </code>
                 </div>
-                <div class="swatch__row">
-                  <span v-if="score(col, color)">{{ score(col, color) }}</span>
-                  <span>{{ ratio(col, color) }}</span>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr v-for="(product, p) in myProducts" :key="p + 'q'">
-            <td>
-              {{ p }}
-              {{ product }}
-            </td>
-            <td v-for="(col, key) in group" :key="key">
-              <div v-if="score(col, product) !== 'F'"
-                   :class="key"
-                   :style="{ backgroundColor: col, color: product }"
-                   class="swatch"
-              >
-                <div class="swatch__row">
-                  <span>Text</span>
-                  <span v-if="score(col, product)">{{ score(col, product) }}</span>
-                </div>
-                <div class="swatch__row">
-                  <span>{{ ratio(col, product) }}</span>
+                <div class="nds-swatch__row">
+                  <span v-if="score(clr, col)">{{ score(clr, col) }}</span>
+                  <span>{{ ratio(clr, col) }}</span>
                 </div>
               </div>
             </td>
@@ -62,22 +44,34 @@
 
 <script>
 import colors from '../../assets/tokens/docs/categorizedJsonPalette.json'
+import size from '../../mixins/size'
 const contrast = require('get-contrast')
 
 export default {
   name: 'ColorA11y',
-  data () {
-    return {
-      colors: colors,
-      cols: [colors]
+  mixins: [size],
+  props: {
+    textColor: {
+      type: String,
+      default: 'blue'
+    },
+    backgroundColor: {
+      type: String,
+      default: 'blue'
     }
   },
-  computed: {
-    myProducts () {
-      return this.cols[0]['color_group_10']
+  data () {
+    return {
+      colors: [colors]
     }
   },
   methods: {
+    txtColor () {
+      return this.colors[0]['color_group_' + this.textColor]
+    },
+    bgColor () {
+      return this.colors[0]['color_group_' + this.backgroundColor]
+    },
     score (background, text) {
       if (contrast.score(background, text) === 'AA') {
         return 'AA'
@@ -95,17 +89,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.grey_80 {
+.nds-grey-80 {
   border: 1px solid $nt-grey-50;
 }
 
-.swatch {
+.nds-swatch {
   min-height: 3rem;
   min-width: 3rem;
   padding: .5rem;
 }
 
-.swatch__row {
+.nds-swatch__row {
   display: flex;
   justify-content: space-between;
 }

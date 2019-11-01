@@ -21,12 +21,12 @@
               <div class="d-flex justify-content-between">
                 <ul>
                   <li class="text-capitalize">
-                    {{ alias(token.originalValue) }}
+                    {{ tokenAlias(token.originalValue) }}
                   </li>
                   <li>-</li>
                   <li>{{ token.value }}</li>
                 </ul>
-                <color-item :background-color="token.value" :class="alias(token.originalValue)" class="es-contrast-grid__key-swatch" />
+                <color-item :background-color="token.value" :class="tokenAlias(token.originalValue)" />
               </div>
             </td>
           </tr>
@@ -39,7 +39,7 @@
 <script>
 import colorItem from './ColorItem'
 import theme from '../../assets/tokens/themes/dark.raw.json'
-// import contrast from 'get-contrast'
+import size from '../../mixins/size'
 import groupBy from 'lodash/groupBy'
 
 export default {
@@ -47,12 +47,7 @@ export default {
   components: {
     colorItem
   },
-  // props: {
-  //   themeGroup: {
-  //     type: String,
-  //     default: '#f00'
-  //   }
-  // },
+  mixins: [size],
   data () {
     return {
       themeProps: theme.props
@@ -64,21 +59,12 @@ export default {
       let f = color.core
       return [f]
     }
-  },
-  methods: {
-    alias (input) {
-      const aliasValue = /{!(.*)}/g
-      const string = input
-        .replace(aliasValue, '$1')
-        .replace(/_/g, '-')
-      return string
-    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.grey-80 {
+.nds-grey-80 {
   border: 1px solid $nt-grey-50;
 }
 
@@ -89,7 +75,7 @@ ul {
   padding-left: 0;
 }
 
-/deep/ .swatch {
+/deep/ .nds-swatch {
   border-radius: 50px;
   height: 3rem;
   width: 3rem;
