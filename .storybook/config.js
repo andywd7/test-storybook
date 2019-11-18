@@ -6,7 +6,7 @@ import { withKnobs } from '@storybook/addon-knobs'
 // import StoryRouter from 'storybook-vue-router'
 
 
-import netaceTheme from './netaceTheme'
+import sbTheme from './sbTheme'
 // import BootstrapVue from 'bootstrap-vue'
 import { FormInputPlugin } from 'bootstrap-vue'
 import { FormSelectPlugin } from 'bootstrap-vue'
@@ -54,9 +54,7 @@ addParameters({
     }
   ],
   options: {
-    hierarchyRootSeparator: /\|/, // matches a |
-    // panelPosition: 'bottom',
-    theme: netaceTheme
+    theme: sbTheme
   },
 });
 

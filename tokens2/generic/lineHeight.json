@@ -1,4 +1,7 @@
 {
+  "imports": [
+    "../aliases.json"
+  ],
   "global": {
     "type": "lineHeight",
     "category": "typography"
@@ -6,42 +9,42 @@
   "props": [
     {
       "name": "lineHeight_01",
-      "value": "16px"
+      "value": "{!lineHeight_01}"
     },
     {
       "name": "lineHeight_02",
-      "value": "18px"
+      "value": "{!lineHeight_02}"
     },
     {
       "name": "lineHeight_03",
-      "value": "20px"
+      "value": "{!lineHeight_03}"
     },
     {
       "name": "lineHeight_04",
-      "value": "22px"
+      "value": "{!lineHeight_04}"
     },
     {
       "name": "lineHeight_05",
-      "value": "24px"
+      "value": "{!lineHeight_05}"
     },
     {
       "name": "lineHeight_06",
-      "value": "26px"
+      "value": "{!lineHeight_06}"
     },
     {
       "name": "lineHeight_07",
-      "value": "36px"
+      "value": "{!lineHeight_07}"
     },
     {
       "name": "lineHeight_08",
-      "value": "40px"
+      "value": "{!lineHeight_08}"
     },
     {
       "name": "lineHeight_09",
-      "value": "50px"
+      "value": "{!lineHeight_09}"
     },
     {
       "name": "lineHeight_10",
-      "value": "64px"
+      "value": "{!lineHeight_10}"
     }]
 }

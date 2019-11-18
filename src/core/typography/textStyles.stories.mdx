@@ -1,0 +1,26 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+import TextStyleItem from './TextStyleItem'
+import Font from './Font'
+
+<Meta title="Core|Typography" component={TextStyleItem} />
+
+# Typography
+
+## Font Stacks
+
+<Story name="Fonts">
+  {{
+    components: { Font },
+    template: `<font />`
+  }}
+</Story>
+
+## Text styles
+
+<Story name="Text styles">
+  {{
+    components: { TextStyleItem },
+    template: `<text-style-item />`
+  }}
+</Story>

@@ -4,10 +4,29 @@
     "category": "depth"
   },
   "props": [
-    { "name": "boxShadow_1", "value": "0 1px 2px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2)" },
-    { "name": "boxShadow_2", "value": "0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.2)" },
-    { "name": "boxShadow_3", "value": "0 4px 8px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.2)" },
-    { "name": "boxShadow_4", "value": "0 8px 16px 0 rgba(0,0,0,0.2), 0 20px 16px -8px rgba(0,0,0,0.2)" },
-    { "name": "boxShadow_5", "value": "0 16px 24px 0 rgba(0,0,0,0.2), 0 32px 24px -16px rgba(0,0,0,0.2)" }
+    { 
+      "name": "shadow_none",
+      "value": "none"
+    },
+    { 
+      "name": "shadow_component",
+      "value": "0 1px 1px rgba(0,0,0,.2)"
+    },
+    { 
+      "name": "shadow_temporary",
+      "value": "0 1px 3px rgba(0,0,0,.2)"
+    },
+    { 
+      "name": "shadow_navigation",
+      "value": "0 2px 4px rgba(0,0,0,0.2)"
+    },
+    { 
+      "name": "shadow_notification",
+      "value": "0 4px 8px rgba(0,0,0,0.2)"
+    },
+    { 
+      "name": "shadow_modal",
+      "value": "0 6px 12px rgba(0,0,0,0.2)"
+    }
   ]
 }

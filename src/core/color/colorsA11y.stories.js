@@ -1,9 +1,9 @@
-import { select } from '@storybook/addon-knobs'
+import { select, boolean } from '@storybook/addon-knobs'
 
 import ColorA11y from './ColorA11y'
 
 export default {
-  title: 'Core|ColorA11y'
+  title: 'Core|Colors'
 }
 
 const colors = {
@@ -26,16 +26,25 @@ export const Default = () => ({
   props: {
     sbTextColor: {
       type: String,
-      default: select('Text colour', colors, 'blue')
+      default: select('Text colour', colors, 'grey')
     },
     sbBackgroundColor: {
       type: String,
       default: select('Background colour', colors, 'blue')
+    },
+    sbContrastFailed: {
+      type: Boolean,
+      default: boolean('Contrast failed', false)
     }
   },
-  template: `<color-a11y :textColor="sbTextColor" :backgroundColor="sbBackgroundColor" />`
+  template: `<color-a11y :textColor="sbTextColor" :backgroundColor="sbBackgroundColor" :contrastFailed="sbContrastFailed" />`
 })
 
 Default.story = {
-  name: 'Default'
+  name: 'Test A11y',
+  parameters: {
+    docs: {
+      disable: true
+    }
+  }
 }

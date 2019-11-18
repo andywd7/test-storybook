@@ -34,7 +34,7 @@ module.exports = async ({ config }) => {
         options: {
           resources: [
             path.resolve(__dirname, '../src/assets/tokens/tokensAndPalette.scss'),
-            path.resolve(__dirname, '../src/assets/tokens/tokensAndPalette.map.scss'),
+            path.resolve(__dirname, '../src/assets/tokens/textStyles.map.scss'),
             path.resolve(__dirname, '../src/assets/tokens/themes/dark.scss'),
             path.resolve(__dirname, '../src/styles/toolbox.scss')
             // path.resolve(__dirname, '../docs/styles/docs.toolbox.scss')

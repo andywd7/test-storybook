@@ -1,22 +1,10 @@
-const keys = require('./keys')
-
-const REGEX_ALIAS_VALUE = /{!(.*)}/g
-
 const categories = (input) =>
   Array.from(new Set(input.get('props').map((prop) => prop.get('category'))))
     .filter((category) => category !== 'palette')
     .sort()
     .concat(['palette'])
 
-const convertKeyToSass = (k) => k.replace(/_/g, '-')
-
-const defaultExport = (result) => `export default ${result}`
-
-const formatBlackAndWhite = (input) =>
-  formatProperties({
-    filter: (prop) => ['black', 'white'].includes(prop.get('name')),
-    input
-  })
+const convertKeyToScss = (k) => k.replace(/_/g, '-')
 
 const formatCategories = (input, keyTemplate) =>
   formatGroups(
@@ -24,15 +12,6 @@ const formatCategories = (input, keyTemplate) =>
     input,
     categories(input),
     keyTemplate
-    // console.log(categories(input))
-  )
-
-const formatColors = (input) =>
-  formatGroups(
-    (prop, color) => prop.get('name').includes(color),
-    input,
-    keys.colors,
-    (name) => (name.includes('hover') || name.includes('plain')) ? `${name.split('_')[2]}` : `${name.split('_')[1]}`
   )
 
 const formatGroups = (filter, input, source, keyTemplate) =>
@@ -50,22 +29,18 @@ const formatGroups = (filter, input, source, keyTemplate) =>
 // * "backgroundColor_active": "#ebeff5" => backgroundColor_active: '#ebeff5'
 // * "fontWeight_regular": 400 => fontWeight_regular: 400
 // * "fontFamily": "\"Open Sans\"" => fontFamily: '"Open Sans"'
-const formatOutput = (result) =>
-  JSON.stringify(result, null, 2)
-    .replace(/"(.*)": /g, '$1: ')
-    .replace(/: "(.*)"/g, ": '$1'")
-    .replace(/\\"/g, '"')
 
 const formatOutputJson = (result) =>
   JSON.stringify(result, null, 2)
+    .replace(/\\"/g, "'")
 
-const formatRampGroups = (input) =>
-  formatGroups(
-    (prop, rampGroup) =>
-      prop.get('type') === 'color' && prop.get(rampGroupFilters[rampGroup]).includes(rampGroup),
-    input,
-    Object.keys(rampGroupFilters)
-  )
+const formatOutputScss = (result) =>
+  JSON.stringify(result, null, 2)
+    .replace(/"(.*)": /g, '$1: ')
+    .replace(/: "(.*)"/g, ': $1')
+    .replace(/{/g, '(')
+    .replace(/}/g, ')')
+    .replace(/\\"/g, '"')
 
 const formatProperties = ({
   filter = (prop) => !!prop,
@@ -88,16 +63,6 @@ const namedExports = (tokens, exportFormat) =>
     .map(exportFormat)
     .join('\n')
 
-const rampGroupFilters = {
-  black: 'originalValue',
-  danger: 'name',
-  grey: 'originalValue',
-  success: 'name',
-  theme: 'name',
-  warning: 'name',
-  white: 'originalValue'
-}
-
 const removeTheoValueQuotes = (value) =>
   typeof value === 'string' ? value.replace(/'/g, '') : value
 
@@ -106,86 +71,23 @@ module.exports = {
     return formatOutputJson(formatCategories(input))
   },
 
-  categorizedSassExports: (input) => {
-    return formatOutputJson(
-      formatCategories(input, (k) => `$nt-${convertKeyToSass(k)}`)
-    )
-  },
-
-  colorAliases: (input) => {
-    return defaultExport(
-      formatOutput(
-        formatProperties({
-          filter: (prop) => prop.get('type') === 'color',
-          getValue: (prop) =>
-            `'${prop.get('originalValue')}'`.replace(REGEX_ALIAS_VALUE, '$1'),
-          input
-        })
-      )
-    )
-  },
-
-  colorExport: (input) => {
-    return defaultExport(
-      formatOutput(
-        formatProperties({
-          input,
-          // Additional brackets are because flow does not support non-string
-          // literal property keys.
-          // https://github.com/facebook/flow/issues/380#issuecomment-224380551
-          keyTemplate: (k) => `[${k.split('_')[1]}]`
-        })
-      )
-    )
+  categorizedScssExports: (input) => {
+    return `$nt-map: ` + formatOutputScss(
+      formatCategories(input, (k) => `$nt-${convertKeyToScss(k)}`)
+    ) + `\n`
   },
 
   defaultExport: (input) => {
-    return defaultExport(formatOutput(formatProperties({ input })))
-  },
-
-  groupedByRampJsExports: (input) => {
-    return defaultExport(formatOutput(formatRampGroups(input)))
-  },
-
-  index: (input) => {
-    // const _ignoreInput = input
-    // const colorExports = keys.colors.map(
-    //   (color) => `export { default as ${color} } from './${color}'`
-    // )
-
-    return [
-      `export { default } from './tokens'`,
-      `export { default as palette } from './palette'`,
-      `export * from './all'`
-    ]
-    // .concat(colorExports)
-      .join('\n')
-      .concat('\n')
+    return formatOutputJson(formatProperties({ input }))
   },
 
   ntScss: (input) => {
     return namedExports(
       formatProperties({
         input,
-        keyTemplate: (k) => `$nt-${convertKeyToSass(k)}`
+        keyTemplate: (k) => `$nt-${convertKeyToScss(k)}`
       }),
       (token) => `${token[0]}: ${token[1]};`
-    )
-  },
-
-  namedExports: (input) => {
-    return namedExports(formatProperties({ input }), (token) => {
-      const value = typeof token[1] === 'string' ? `'${token[1]}'` : token[1]
-      return `export const ${token[0]} = ${value}`
-    })
-  },
-
-  paletteWithKeysAndType: (input) => {
-    return defaultExport(
-      formatOutput({
-        ...formatColors(input),
-        ...formatBlackAndWhite(input)
-      })
     )
   }
 }

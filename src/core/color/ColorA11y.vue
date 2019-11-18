@@ -18,7 +18,7 @@
               {{ clr }}
             </td>
             <td v-for="(col, key) in txtColor()" :key="key">
-              <div v-if="score(clr, col) !== 'F'"
+              <div v-if="isAccessible(clr, col)"
                    :class="tokenAlias(key)"
                    :style="{ backgroundColor: clr, color: col }"
                    class="nds-swatch"
@@ -30,7 +30,7 @@
                   </code>
                 </div>
                 <div class="nds-swatch__row">
-                  <span v-if="score(clr, col)">{{ score(clr, col) }}</span>
+                  <span v-if="isAccessible(clr, col)">{{ score(clr, col) }}</span>
                   <span>{{ ratio(clr, col) }}</span>
                 </div>
               </div>
@@ -43,21 +43,25 @@
 </template>
 
 <script>
-import colors from '../../assets/tokens/docs/categorizedJsonPalette.json'
-import size from '../../mixins/size'
+import colors from '../../assets/tokens/docs/categorizedTokensAndPalette.json'
+import utils from '../../mixins/utils'
 const contrast = require('get-contrast')
 
 export default {
   name: 'ColorA11y',
-  mixins: [size],
+  mixins: [utils],
   props: {
     textColor: {
       type: String,
-      default: 'blue'
+      default: 'grey'
     },
     backgroundColor: {
       type: String,
       default: 'blue'
+    },
+    contrastFailed: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -71,6 +75,9 @@ export default {
     },
     bgColor () {
       return this.colors[0]['color_group_' + this.backgroundColor]
+    },
+    isAccessible (background, text) {
+      return contrast.isAccessible(background, text) === !this.contrastFailed
     },
     score (background, text) {
       if (contrast.score(background, text) === 'AA') {

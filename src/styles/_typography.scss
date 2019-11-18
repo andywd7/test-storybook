@@ -1,0 +1,10 @@
+.nt-code-01,
+.nt-code-02 {
+    font-family: monospace;
+}
+
+@each $style, $properties in $nt-text-styles-map {
+    .nt-#{$style} {
+        @include nt-text-style($style);
+    }
+}

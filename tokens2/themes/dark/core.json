@@ -11,7 +11,38 @@
     "value": "{!grey_90}",
     "category": "core",
     "role": "Default page background"
-  }, {
+  }, 
+  {
+    "name": "interactive_01",
+    "value": "{!blue_60}",
+    "category": "core",
+    "role": "Primary interactive color; Interactive text; Selected elements; Featured elements"
+  },
+  {
+    "name": "interactive_02",
+    "value": "{!grey_60}",
+    "category": "core",
+    "role": "Secondary button"
+  },
+  {
+    "name": "interactive_03",
+    "value": "{!white}",
+    "category": "core",
+    "role": "Tertiary button"
+  },
+  {
+    "name": "interactive_04",
+    "value": "{!blue_50}",
+    "category": "core",
+    "role": "Selected nav indicator; Acgive elements"
+  },
+  {
+    "name": "danger",
+    "value": "{!red_60}",
+    "category": "core",
+    "role": "Danger button background; 3:1 AA contrast"
+  },
+  {
     "name": "ui_01",
     "value": "{!grey_80}",
     "category": "core",
@@ -21,157 +52,158 @@
     "value": "{!grey_70}",
     "category": "core",
     "role": "Secondary container background"
-  }, {
+  },
+  {
     "name": "ui_03",
     "value": "{!grey_70}",
     "category": "core",
     "role": "Subtle border; Tertiary container background"
-  }, {
+  },
+  {
     "name": "ui_04",
     "value": "{!grey_50}",
     "category": "core",
     "role": "2:1 AA elements contrast; Medium contrast border"
-  }, {
+  },
+  {
     "name": "ui_05",
     "value": "{!grey_10}",
     "category": "core",
     "role": "4:5:1 AA element contrast; High contrast border; Emphasis elements"
-  }, {
-    "name": "interactive_01",
-    "value": "{!blue_60}",
-    "category": "core",
-    "role": "Primary interactive color; Interactive text; Selected elements; Featured elements"
-  }, {
-    "name": "interactive_02",
-    "value": "{!grey_60}",
-    "category": "core",
-    "role": "Secondary button"
-  }, {
-    "name": "interactive_03",
-    "value": "{!white}",
-    "category": "core",
-    "role": "Tertiary button"
-  }, {
-    "name": "interactive_04",
-    "value": "{!blue_50}",
-    "category": "core",
-    "role": "Selected nav indicator; Acgive elements"
-  }, {
-    "name": "danger",
-    "value": "{!red_60}",
-    "category": "core",
-    "role": "Danger button background; 3:1 AA contrast"
-  }, {
+  },
+  {
     "name": "text_01",
     "value": "{!grey_10}",
     "category": "core",
     "role": "Primary text; Body copy; Headers; Hover text for text-02"
-  }, {
+  },
+  {
     "name": "text_02",
     "value": "{!grey_30}",
     "category": "core",
     "role": "Secondary text; Input labels"
-  }, {
+  },
+  {
     "name": "text_03",
     "value": "{!grey_60}",
     "category": "core",
     "role": "Placeholder text"
-  }, {
+  },
+  {
     "name": "text_04",
     "value": "{!white}",
     "category": "core",
     "role": "Text on interactive colors"
-  }, {
+  },
+  {
     "name": "text_05",
     "value": "{!grey_50}",
     "category": "core",
     "role": "Tertiary text; Help text"
-  }, {
+  },
+  {
     "name": "link_01",
     "value": "{!blue_40}",
     "category": "core",
     "role": "Primary links"
-  }, {
+  },
+  {
     "name": "inverse_link",
     "value": "{!blue_60}",
     "category": "core",
     "role": "Links on inverse-02 backgrounds"
-  }, {
+  },
+  {
     "name": "icon_01",
     "value": "{!grey_10}",
     "category": "core",
     "role": "Primary icons"
-  }, {
+  },
+  {
     "name": "icon_02",
     "value": "{!grey_30}",
     "category": "core",
     "role": "Secondary icons"
-  }, {
+  },
+  {
     "name": "icon_03",
     "value": "{!white}",
     "category": "core",
     "role": "Tertiary icons; Icons on interactive colors; Icons on non-ui colors"
-  }, {
+  },
+  {
     "name": "field_01",
     "value": "{!grey_80}",
     "category": "core",
     "role": "Default input fields; Field color for ui-02 backgrounds"
-  }, {
+  },
+  {
     "name": "field_02",
     "value": "{!grey_70}",
     "category": "core",
     "role": "Field color for ui-01 backgrounds"
-  }, {
+  },
+  {
     "name": "inverse_01",
     "value": "{!grey_100}",
     "category": "core",
     "role": "Inverse text color; Inverse icon color"
-  }, {
+  },
+  {
     "name": "inverse_02",
     "value": "{!grey_10}",
     "category": "core",
     "role": "High contrast backgrounds; High contrast elements"
-  }, {
+  },
+  {
     "name": "support_01",
     "value": "{!red_50}",
     "category": "core",
     "role": "Error; Danger"
-  }, {
+  },
+  {
     "name": "support_02",
     "value": "{!green_40}",
     "category": "core",
     "role": "Success"
-  }, {
+  },
+  {
     "name": "support_03",
     "value": "{!orange_40}",
     "category": "core",
     "role": "Warning"
-  }, {
+  },
+  {
     "name": "support_04",
     "value": "{!blue_50}",
     "category": "core",
     "role": "Information"
-  }, {
+  },
+  {
     "name": "inverse_support_01",
     "value": "{!red_60}",
     "category": "core",
     "role": "Error in high contrast moments"
-  }, {
+  },
+  {
     "name": "inverse_support_02",
     "value": "{!green_50}",
     "category": "core",
     "role": "Success in high contrast moments"
-  }, {
+  },
+  {
     "name": "inverse_support_03",
     "value": "{!orange_50}",
     "category": "core",
     "role": "Warning in high contrast moments"
-  }, {
+  },
+  {
     "name": "inverse_support_04",
     "value": "{!blue_60}",
     "category": "core",
     "role": "Information in high contrast moments"
-  }, {
+  },
+  {
     "name": "overlay_01",
     "value": "rgba(18, 22, 25, .70)",
     "category": "core",

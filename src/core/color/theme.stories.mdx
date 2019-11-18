@@ -1,0 +1,18 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+
+import ThemeItem from './ThemeItem'
+// import themeTokens from '../../assets/tokens/themes/dark.raw.json'
+// import groupBy from 'lodash/groupBy'
+
+<Meta title="Core|Colors" component={ThemeItem} />
+
+# Theme
+
+Let's define a story for our `Theme` component:
+
+<Story name="Theme">
+  {{
+    components: { ThemeItem },
+    template: '<theme-item />'
+  }}
+</Story>

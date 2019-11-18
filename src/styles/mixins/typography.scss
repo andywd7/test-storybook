@@ -1,5 +1,18 @@
-@mixin caption-01 {
-  font-size: $nt-fontSize-01;
-  font-weight: $nt-fontWeight-regular;
-  line-height: $nt-fontSize-03;
- }
+// @mixin properties($map) {
+//   @each $name, $value in $map {
+//     #{$name}: $value;
+//   }
+// }
+
+@mixin nt-text-style($name) {
+  @if not map-has-key($nt-text-styles-map, $name) {
+    @error 'Unable to find a token with the name: `#{$name}`';
+  }
+
+  $token: map-get($nt-text-styles-map, $name);
+
+  // @include properties($token);
+  @each $name, $value in $token {
+      #{$name}: $value;
+  }
+}

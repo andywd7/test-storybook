@@ -20,9 +20,12 @@ module.exports = {
         }
       }
     ],
+    'vue/html-indent': ['error', 2, {
+      ignores: ['VElement[name=pre].children']
+    }],
     'vue/multiline-html-element-content-newline': ['error', {
       ignoreWhenEmpty: true,
-      ignores: ['component']
+      ignores: ['VueComponent', 'pre']
     }],
     'vue/no-unused-vars': 'error'
   },

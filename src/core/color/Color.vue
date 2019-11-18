@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import colors from '../../assets/tokens/docs/categorizedJsonPalette.json'
+import colors from '../../assets/tokens/docs/categorizedPalette.json'
 import colorItem from './ColorItem'
 
 export default {

@@ -13,6 +13,17 @@
     "fontSize_08": "54px",
 
     "fontWeight_regular": 400,
-    "fontWeight_medium": 600
+    "fontWeight_bold": 600,
+
+    "lineHeight_01": "16px",
+    "lineHeight_02": "18px",
+    "lineHeight_03": "20px",
+    "lineHeight_04": "22px",
+    "lineHeight_05": "24px",
+    "lineHeight_06": "26px",
+    "lineHeight_07": "36px",
+    "lineHeight_08": "40px",
+    "lineHeight_09": "50px",
+    "lineHeight_10": "64px"
   }
 }

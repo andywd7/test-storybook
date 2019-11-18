@@ -1,11 +1,8 @@
 {
   "imports": [
-    "./backgroundColor.json",
-    "./borderColor.json",
     "./borderRadius.json",
     "./boxShadow.json",
     "./breakpoint.json",
-    "./textColor.json",
     "./fontFamily.json",
     "./fontSize.json",
     "./fontWeight.json",

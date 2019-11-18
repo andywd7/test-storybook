@@ -1,0 +1,182 @@
+{
+  "imports": [
+    "./aliases.json"
+  ],
+  "global": {
+    "type": "textStyle",
+    "category": "textStyle"
+  },
+  "props": [
+    {
+      "name": "code_01",
+      "value": {
+        "font_size": "{!fontSize_01}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_01}"
+      },
+      "role": "This is for inline code snippets and smaller code elements <p class=\"ibm-type-mono\">Mono</p>"
+    },
+    {
+      "name": "code_02",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_03}"
+      },
+      "role": "This is for code snippets and larger code elements <p class=\"ibm-type-mono\">Mono</p>"
+    },
+    {
+      "name": "label_01",
+      "value": {
+        "font_size": "{!fontSize_01}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_01}"
+      },
+      "role": "This is for field labels in components and error messages."
+    },
+    {
+      "name": "caption_01",
+      "value": {
+        "font_size": "{!fontSize_01}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_01}"
+      },
+      "role": "This is for captions or legal content in a layout — not for body copy."
+    },
+    {
+      "name": "body_short_01",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_02}"
+      },
+      "role": "This is for short paragraphs with no more than 4 lines and is commonly used in components."
+    },
+    {
+      "name": "body_short_01_bold",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_02}"
+      },
+      "role": "This is the bold version of body-short-01."
+    },
+    {
+      "name": "body_short_02",
+      "value": {
+        "font_size": "{!fontSize_03}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_04}"
+      },
+      "role": "This is for short paragraphs with no more than 4 lines and is commonly used for layouts."
+    },
+    {
+      "name": "body_short_02_bold",
+      "value": {
+        "font_size": "{!fontSize_03}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_04}"
+      },
+      "role": "This is the bold version of body-short-02."
+    },
+    {
+      "name": "body_long_01",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_02}"
+      },
+      "role": "This is commonly used for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as Accordion or Structured List. We always left-align this type; we never center it."
+    },
+    {
+      "name": "body_long_01_bold",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_02}"
+      },
+      "role": "This is the bold version of body-long-01."
+    },
+    {
+      "name": "body_long_02",
+      "value": {
+        "font_size": "{!fontSize_03}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_05}"
+      },
+      "role": "This is commonly used for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This size type is rarely used for body copy in components. We always left-align type; we never center it."
+    },
+    {
+      "name": "body_long_02_bold",
+      "value": {
+        "font_size": "{!fontSize_03}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_05}"
+      },
+      "role": "This is the bold version of body-long-02."
+    },
+    {
+      "name": "heading_01",
+      "value": {
+        "font_size": "{!fontSize_02}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_02}"
+      },
+      "role": "This is for component and layout headings."
+    },
+    {
+      "name": "heading_02",
+      "value": {
+        "font_size": "{!fontSize_03}",
+        "font_weight": "{!fontWeight_bold}",
+        "line_height": "{!lineHeight_04}"
+      },
+      "role": "This is for component and layout headings."
+    },
+    {
+      "name": "heading_03",
+      "value": {
+        "font_size": "{!fontSize_04}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_06}"
+      },
+      "role": "This is for component and layout headings."
+    },
+    {
+      "name": "heading_04",
+      "value": {
+        "font_size": "{!fontSize_05}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_07}"
+      },
+      "role": "This is for layout headings."
+    },
+    {
+      "name": "heading_05",
+      "value": {
+        "font_size": "{!fontSize_06}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_08}"
+      },
+      "role": "This is for layout headings."
+    },
+    {
+      "name": "heading_06",
+      "value": {
+        "font_size": "{!fontSize_07}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_09}"
+      },
+      "role": "This is for layout headings."
+    },
+    {
+      "name": "heading_07",
+      "value": {
+        "font_size": "{!fontSize_08}",
+        "font_weight": "{!fontWeight_regular}",
+        "line_height": "{!lineHeight_10}"
+      },
+      "role": "This is for layout headings."
+    }
+  ]
+}

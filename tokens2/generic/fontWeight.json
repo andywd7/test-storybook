@@ -12,8 +12,8 @@
       "value": "{!fontWeight_regular}"
     },
     {
-      "name": "fontWeight_medium", 
-      "value": "{!fontWeight_medium}"
+      "name": "fontWeight_bold", 
+      "value": "{!fontWeight_bold}"
     }
   ]
 }

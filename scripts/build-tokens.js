@@ -29,25 +29,26 @@ if (!fs.existsSync(TOKENS_SRC_DIR)) {
 
 // ============================================================================
 
-theo.registerFormat('colorAliases.js', formats.colorAliases)
-theo.registerFormat('colorExport.js', formats.colorExport)
+// theo.registerFormat('nested-maps.scss', require('./nested-maps.scss.js'))
+// theo.registerFormat('colorAliases.js', formats.colorAliases)
+// theo.registerFormat('colorExport.js', formats.colorExport)
 theo.registerFormat('defaultExport.js', formats.defaultExport)
 theo.registerFormat('categorizedJsonExports.js', formats.categorizedJsonExports)
 theo.registerFormat(
-  'categorizedSassExports.js',
-  formats.categorizedSassExports
+  'categorizedScssExports.js',
+  formats.categorizedScssExports
 )
-theo.registerFormat('index.js', formats.index)
-theo.registerFormat(
-  'groupedByRampJsExports.js',
-  formats.groupedByRampJsExports
-)
+// theo.registerFormat('index.js', formats.index)
+// theo.registerFormat(
+//   'groupedByRampJsExports.js',
+//   formats.groupedByRampJsExports
+// )
 theo.registerFormat('ntScss', formats.ntScss)
-theo.registerFormat('namedExports.js', formats.namedExports)
-theo.registerFormat(
-  'paletteWithKeysAndType.js',
-  formats.paletteWithKeysAndType
-)
+// theo.registerFormat('namedExports.js', formats.namedExports)
+// theo.registerFormat(
+//   'paletteWithKeysAndType.js',
+//   formats.paletteWithKeysAndType
+// )
 
 theo.registerValueTransform(
   'addQuotes',
@@ -64,108 +65,59 @@ theo.registerValueTransform(
 
 theo.registerTransform('js', ['addQuotes', 'fontWeight'])
 
+const { Map } = require('immutable')
+const convertKeyToScss = (k) => k.replace(/_/g, '-')
+const convertAlias = (input) => {
+  const originalValue = /{!(.*)}/g
+  const string = input
+    .replace(originalValue, '$1')
+    .replace(/_/g, '-')
+  return string
+}
+
+theo.registerFormat('nested-maps.scss', raw => {
+  const props = raw.get('props')
+
+  const data = props.map(prop => {
+    const value = prop.get('originalValue')
+    if (Map.isMap(value)) {
+      const name = prop.get('name')
+
+      return {
+        name,
+        value: value.toObject()
+      }
+    } else {
+      return value
+    }
+  })
+
+  const map = data.toArray().map(d => {
+    const body = Object.keys(d.value).map(k => `\n  ${convertKeyToScss(k)}: $nt-${convertAlias(d.value[k])}`)
+
+    return `$nt-${convertKeyToScss(d.name)}: (${body}\n) !default;`
+  })
+
+  const tokenMap = data.toArray().map(d => {
+    const map = `\n  ${convertKeyToScss(d.name)}: $nt-${convertKeyToScss(d.name)}`
+
+    return map
+  })
+
+  return `${map.join('\n\n')}\n\n$nt-text-styles-map: (${tokenMap}\n) !default;\n\n`
+})
+
 // ============================================================================
 
 const configurations = [
-  // {
-  //   // Tokens
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokens.json'),
-  //     type: 'web'
-  //   },
-  //   format: { type: 'raw.json' },
-  //   fileName: 'tokens.raw.json'
-  // },
-  {
-    // Tokens
-    transform: {
-      file: path.join(TOKENS_DIR, 'tokens.json'),
-      type: 'web'
-    },
-    format: { type: 'json' },
-    fileName: 'tokens.json'
-  },
-  // {
-  //   // Grouped JS tokens by color ramp
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokens.json'),
-  //     type: 'js'
-  //   },
-  //   format: { type: 'groupedByRampJsExports.js' },
-  //   fileName: 'groupedByRampJsTokens.js',
-  //   writeDir: WEBSITE_GENERATED_DIR
-  // },
-  {
-    // Just the color palette
-    transform: {
-      file: path.join(TOKENS_COLORS_DIR, 'index.json'),
-      type: 'web'
-    },
-    format: { type: 'json' },
-    fileName: 'palette.json'
-  },
-  // {
-  //   // Grouped palette
-  //   transform: {
-  //     file: path.join(TOKENS_COLORS_DIR, 'index.json'),
-  //     type: 'web'
-  //   },
-  //   format: { type: 'raw.json' },
-  //   fileName: 'palette.raw.json',
-  //   writeDir: WEBSITE_GENERATED_DIR
-  // },
-  // {
-  //   // Tokens and palette
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
-  //     type: 'web'
-  //   },
-  //   format: { type: 'namedExports.js' },
-  //   fileName: 'all.js'
-  // },
   {
     // Tokens and palette
     transform: {
       file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
       type: 'web'
     },
-    format: { type: 'json' },
+    format: { type: 'defaultExport.js' },
     fileName: 'tokensAndPalette.json'
-  },
-  // {
-  //   // Tokens and palette
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
-  //     type: 'web'
-  //   },
-  //   format: { type: 'raw.json' },
-  //   fileName: 'tokensAndPalette.raw.json'
-  // },
-  {
-    // Tokens and palette, in Sass
-    transform: {
-      file: path.join(TOKENS_DIR, 'tokensAndPalette.json')
-    },
-    format: { type: 'ntScss' },
-    fileName: 'tokensAndPalette.scss'
-  },
-  // {
-  //   // Index
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokensAndPalette.json')
-  //   },
-  //   format: { type: 'index.js' },
-  //   fileName: 'index.js'
-  // },
-  {
-    // Grouped JSON tokens by category
-    transform: {
-      file: path.join(TOKENS_DIR, 'tokens.json'),
-      type: 'web'
-    },
-    format: { type: 'categorizedJsonExports.js' },
-    fileName: 'categorizedJsonTokens.json',
-    writeDir: WEBSITE_GENERATED_DIR
   },
   {
     // Grouped JSON colors by category
@@ -174,28 +126,67 @@ const configurations = [
       type: 'web'
     },
     format: { type: 'categorizedJsonExports.js' },
-    fileName: 'categorizedJsonPalette.json',
+    fileName: 'categorizedPalette.json',
+    writeDir: WEBSITE_GENERATED_DIR
+  },
+  {
+    // Tokens and palette, in Scss
+    transform: {
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'web'
+    },
+    format: { type: 'ntScss' },
+    fileName: 'tokensAndPalette.scss'
+  },
+  {
+    // Text styles, in Scss
+    transform: {
+      file: path.join(TOKENS_DIR, 'textStyles.json'),
+      type: 'web'
+    },
+    format: { type: 'nested-maps.scss' },
+    fileName: 'textStyles.map.scss'
+  },
+  {
+    // Text styles, in JSON
+    transform: {
+      file: path.join(TOKENS_DIR, 'textStyles.json'),
+      type: 'web'
+    },
+    format: { type: 'raw.json' },
+    fileName: 'textStyles.raw.json',
+    writeDir: WEBSITE_GENERATED_DIR
+  },
+  {
+    // Grouped JSON tokens and palette by category
+    transform: {
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'web'
+    },
+    format: { type: 'categorizedJsonExports.js' },
+    fileName: 'categorizedTokensAndPalette.json',
+    writeDir: WEBSITE_GENERATED_DIR
+  },
+  {
+    // Grouped RAW.JSON tokens and palette by category
+    transform: {
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'web'
+    },
+    format: { type: 'raw.json' },
+    fileName: 'categorizedTokensAndPalette.raw.json',
+    writeDir: WEBSITE_GENERATED_DIR
+  },
+  {
+    // Grouped Scss tokens and palette by category
+    transform: {
+      file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
+      type: 'web'
+    },
+    format: { type: 'categorizedScssExports.js' },
+    fileName: 'categorizedTokensAndPalette.scss',
     writeDir: WEBSITE_GENERATED_DIR
   }
-  // {
-  //   // Grouped Sass tokens by category
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokensAndPalette.json'),
-  //     type: 'web'
-  //   },
-  //   format: { type: 'categorizedSassExports.js' },
-  //   fileName: 'categorizedSassTokens.json',
-  //   writeDir: WEBSITE_GENERATED_DIR
-  // }
-  // {
-  //   // All tokens with color values
-  //   transform: {
-  //     file: path.join(TOKENS_DIR, 'tokens.json')
-  //   },
-  //   format: { type: 'colorAliases.js' },
-  //   fileName: 'colorAliases.js',
-  //   writeDir: WEBSITE_GENERATED_DIR
-  // }
 ]
 
 // ============================================================================

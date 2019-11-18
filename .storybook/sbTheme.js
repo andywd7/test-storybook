@@ -32,8 +32,5 @@ export default create({
   inputTextColor: tokens.grey_100,
   inputBorderRadius: 3,
 
-  brandTitle: 'Netace Storybook'
-  // gridCellSize: 2
-  // brandUrl: 'https://example.com',
-  // brandImage: 'https://placehold.it/350x150'
+  brandTitle: 'Storybook'
 })

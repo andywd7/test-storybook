@@ -39,7 +39,7 @@
 <script>
 import colorItem from './ColorItem'
 import theme from '../../assets/tokens/themes/dark.raw.json'
-import size from '../../mixins/size'
+import utils from '../../mixins/utils'
 import groupBy from 'lodash/groupBy'
 
 export default {
@@ -47,7 +47,7 @@ export default {
   components: {
     colorItem
   },
-  mixins: [size],
+  mixins: [utils],
   data () {
     return {
       themeProps: theme.props

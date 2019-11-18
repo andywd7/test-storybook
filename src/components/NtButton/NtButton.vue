@@ -15,14 +15,14 @@
 </template>
 
 <script>
-import size from '../../mixins/size'
+import utils from '../../mixins/utils'
 
 export default {
   name: 'NtBtn',
   status: 'prototype',
   release: '1.0.0',
   // inheritAttrs: false,
-  mixins: [size],
+  mixins: [utils],
   props: {
     pressed: {
       type: Boolean,
